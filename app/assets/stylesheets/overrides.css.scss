@@ -1,0 +1,16 @@
+.thumbnail {
+  .caption {
+    height: 2em;
+    text-align: center;
+  }
+  .image {
+    display: table-cell;
+    vertical-align: middle;
+    &.gallery {
+      height: 30em;
+    }
+    &.gallery-image {
+      height: 20em;
+    }    
+  }
+}

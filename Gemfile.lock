@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/pashex/cms_gallery.git
-  revision: 2fdbd9c85a0bf6c999dc8d0ed00b0aad3fc9ca54
+  revision: 7195238efe27f5c35ffcb00414149ec03a38bc9f
   specs:
     cms_gallery (0.0.1)
       bootstrap-sass

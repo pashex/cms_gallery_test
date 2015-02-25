@@ -3,9 +3,8 @@
   - @images.each do |image|
     .col-md-3
       .thumbnail
-        = link_to image_tag(image.image_url(:medium), alt: image.alt), image.image_url
+        .image.gallery-image
+          = link_to image_tag(image.image_url(:medium), alt: image.alt, title: image.description), image.image_url
         .caption
-          %h2= image.name
-          .image-desc
-            = image.description
+          = image.name
 = link_to "<- Back to gallery list", galleries_path, class: 'btn btn-default'

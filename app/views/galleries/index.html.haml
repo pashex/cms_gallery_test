@@ -2,8 +2,8 @@
   - @galleries.each do |gallery|
     .col-md-4
       .thumbnail
-        = link_to image_tag(gallery.image_url(:medium)), gallery_path(gallery)
+        .image.gallery
+          = link_to image_tag(gallery.image_url(:medium), alt: gallery.name, title: gallery.description), gallery_path(gallery)
         .caption
-          %h2= link_to gallery.name, gallery_path(gallery)
-          .description
-            = gallery.description
+          = link_to gallery.name, gallery_path(gallery)
+
